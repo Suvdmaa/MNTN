@@ -20,6 +20,7 @@ body {
   position: absolute;
   left: 0;
   width: 100%;
+  max-width: 1920px;
   z-index: -1;
 }
 .bg-img1 {
@@ -54,7 +55,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
+  position: fixed;
   left: 80px; right: 80px; top: 64px;
   z-index: 100;
 }
@@ -243,7 +244,7 @@ body {
   display: grid;
   gap: 200px;
   margin: -460px auto 0;
-  width: 1462px;
+  max-width: 1462px;
 }
 
 /*Contents*/
@@ -259,7 +260,7 @@ body {
   right: 680px;
 }
 .block > div {
-  flex: 1;
+  /* flex: 1; */
   padding-left: 150px;
   display: flex;
   flex-direction: column;
@@ -318,7 +319,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 200px auto 120px;
-  width: 1462px;
+  max-width: 1462px;
 }
 .footer_left {
   display: grid;
