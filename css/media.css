@@ -1,0 +1,32 @@
+@media (max-width: 1600px){
+    .header{
+        left: 5%; right: 5%;
+    }
+
+}
+
+    
+@media (max-width: 767.98px){
+    /* Header */
+    main{
+        width: 100%;
+    }
+
+    .header .gnb a, .btn-account{
+        display: none;
+    }
+    .toogle_btn{
+        display: flex;
+        color: #fff;
+    }
+    /*Contents*/
+    .block, .footer{
+        display: block;
+    }
+    .index-contents{
+        width: 100%;
+    }
+    .block > div{
+        padding-left: 0;
+    }
+}
