@@ -3,18 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="./css/main.css" />
-    <link rel="stylesheet" type="text/css" href="./css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="./css/media.css"/>
+    <meta name="viewport" content="width-device-width, initial-scale=1, viewport-fit=cover"/>
+    <link rel="stylesheet" type="text/css" href="../assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/media.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>MNTN</title>
   </head>
   <body>
-
     <header id="header" class="header">
       <h1><a href="" class="h1">MNTN</a></h1>
-      <nav>
+      <nav class="navbar">
         <ul class="gnb">
           <li><a href="">Equipment</a></li>
           <li><a href="">About us</a></li>
@@ -22,8 +21,17 @@
         </ul>
       </nav>
       <a href="" class="btn-account">Account</a>
-      <div class="toogle_btn"><i class="fa-solid fa-bars"></i></div>
+      <label class="toogle-btn" for="toggle-menu">&#9776;</label>
+      <input type="checkbox" id="toggle-menu" class="toggle-menu"/>
     </header>
+    <div class="sidebar" id="sidebar">
+      <ul>
+          <li><a href="">Equipment</a></li>
+          <li><a href="">About us</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Account</a></li>
+      </ul>
+  </div>
     <div class="dimmed"></div>
 
     <main>
@@ -40,21 +48,21 @@
         </div>
         <nav class="quick">
           <ul>
-            <li><a href="/" class="active">Start</a></li>
+            <li><a href="#header" class="active">Start</a></li>
             <li><a href="#block1">01</a></li>
             <li><a href="#block2">02</a></li>
             <li><a href="#block3">03</a></li>
           </ul>
         </nav>
       </div>
-      <img src="./assets/img/bg-sky.png" alt="" class="bg-img bg-img1" />
-      <img src="./assets/img/bg_mountain.png" alt="" class="bg-img bg-img2" />
-      <img src="./assets/img/bg_hill.png" alt="" class="bg-img bg-img3" />
+      <img src="../assets/img/bg-sky.png" alt="" class="bg-img bg-img1" />
+      <img src="../assets/img/bg_mountain.png" alt="" class="bg-img bg-img2" />
+      <img src="../assets/img/bg_hill.png" alt="" class="bg-img bg-img3" />
       <div class="gradient_content"></div>
 
       <section class="index-contents">
         <div class="block" id="block1">
-          <div data-aos-offset="300" data-aos="fade-right">
+          <div data-aos-offset="300" data-aos="fade-right" class="content">
             <h2 class="block_title">What level of hiker are you?</h2>
             <span class="block_count">01</span>
             <span class="subtitle">GEt Started</span>
@@ -68,10 +76,10 @@
             </p>
             <a href="" class="block_more">read more</a>
           </div>
-          <img src="assets/img/img_picture1.png" alt="" data-aos-offset="500" data-aos="fade-left"/>
+          <img src="../assets/img/img_picture1.png" alt="" data-aos-offset="500" data-aos="fade-left"/>
         </div>
         <div class="block" id="block2">
-          <div data-aos-offset="500" data-aos="fade-left" >
+          <div data-aos-offset="500" data-aos="fade-left" class="content">
             <h2 class="block_title">Picking the right Hiking Gear!</h2>
             <span class="block_count">02</span>
             <span class="subtitle">Hiking Essentials</span>
@@ -84,10 +92,10 @@
             </p>
             <a href="" class="block_more">read more</a>
           </div>
-          <img src="assets/img/img_picture2.png" alt=""  data-aos-offset="300" data-aos="fade-right"/>
+          <img src="../assets/img/img_picture2.png" alt=""  data-aos-offset="300" data-aos="fade-right"/>
         </div>
         <div class="block" id="block3">
-          <div data-aos-offset="300" data-aos="fade-right">
+          <div data-aos-offset="300" data-aos="fade-right" class="content">
             <h2 class="block_title">Understand Your Map & Timing</h2>
             <span class="block_count">03</span>
             <span class="subtitle">where you go is the key</span>
@@ -100,7 +108,7 @@
             </p>
             <a href="" class="block_more">read more</a>
           </div>
-          <img src="assets/img/img_picture3.png" alt=""  data-aos-offset="500" data-aos="fade-left"/>
+          <img src="../assets/img/img_picture3.png" alt=""  data-aos-offset="500" data-aos="fade-left"/>
         </div>
       </section>
 
@@ -141,8 +149,7 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://kit.fontawesome.com/31813ca307.js" crossorigin="anonymous"></script>
-    <script src="./assets/js/common.js"></script>
-    <script src="./assets/js/contents.js"></script>
+    <script src="../assets/js/common.js"></script>
+    <script src="../assets/js/contents.js"></script>
   </body>
 </html>

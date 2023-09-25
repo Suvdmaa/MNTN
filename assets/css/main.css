@@ -20,7 +20,6 @@ body {
   position: absolute;
   left: 0;
   width: 100%;
-  max-width: 1920px;
   z-index: -1;
 }
 .bg-img1 {
@@ -55,7 +54,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
+  position: absolute;
   left: 80px; right: 80px; top: 64px;
   z-index: 100;
 }
@@ -90,14 +89,18 @@ body {
 }
 .btn-account::before {
   content: "";
-  background: url(../assets/img/ico_member.svg) no-repeat;
+  background: url(../img/ico_member.svg) no-repeat;
   width: 24px;
   height: 24px;
   margin-right: 8px;
 }
-.toogle_btn{
+.toogle-btn, input, .sidebar {
   display: none;
 }
+
+
+
+
 
 /*Visual*/
 .visual {
@@ -111,7 +114,6 @@ body {
   left: 80px; top: 50%;
   transform: translateY(-50%);
   z-index: 20;
-
 }
 .sns_title {
   writing-mode: vertical-rl;
@@ -126,10 +128,10 @@ body {
   height: 24px;
 }
 .btn-insta {
-  background: url(../assets/img/ico_insta.svg) no-repeat;
+  background: url(../img/ico_insta.svg) no-repeat;
 }
 .btn-twitter {
-  background: url(../assets/img/ico_twitter.svg) no-repeat;
+  background: url(../img/ico_twitter.svg) no-repeat;
 }
 .txt-guide {
   cursor: pointer;
@@ -208,7 +210,7 @@ body {
   width: 16px;
   height: 24px;
   margin-left: 16px;
-  background: url(../assets/img/ico_arrow_down.svg) no-repeat;
+  background: url(../img/ico_arrow_down.svg) no-repeat;
 }
 
 @keyframes txt {
@@ -301,7 +303,7 @@ body {
   content: "";
   height: 16px;
   width: 24px;
-  background: url(../assets/img/ico_arrow-right.svg) no-repeat 0 0 / contain;
+  background: url(../img/ico_arrow-right.svg) no-repeat 0 0 / contain;
 }
 .block_count {
   position: absolute;
@@ -319,6 +321,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 200px auto 120px;
+  width: 90%;
   max-width: 1462px;
 }
 .footer_left {
